@@ -2,8 +2,301 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --bg-color-blue: #66768a;
+    --bg-color-grey: #dbdfe2;
+    --font-color-heading: #161f2a;
+    --font-color-main: #f1f1f1;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    text-align: center;
 }
 
 h1 {
-    color: red;
+    font-family: 'Oswald';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+nav,
+main,
+a {
+    color: var(--font-color-main);
+}
+
+header {
+    height: 60px;
+    min-width: 100vw;
+    background: var(--bg-color-blue);
+}
+
+main {
+    height: 55vh;
+    min-width: 100vw;
+    background: var(--bg-color-blue);
+}
+
+nav {
+    display: flex;
+    padding: 10px 0;
+}
+
+.header-left {
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container {
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.org-logo {
+    margin-left: 120px;
+}
+
+.btn-container {
+    width: 20vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.donate-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    background:#f1f1f1;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--bg-color-blue);
+}
+
+.page1 {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+.page1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 40vw;
+}
+
+.main-heading {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.main-text {
+    word-wrap: break-word;
+    font-size: 1.25rem;
+    margin-top: 40px;
+}
+
+.video-link {
+    margin-top: 20px;
+    height: 80px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/playicon.jpg) left no-repeat;
+
+}
+
+.video-btn {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+.page2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.page2-container {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2-heading {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.page2-heading > p {
+    font-family: sans-serif;
+}
+
+.page3 {
+    background: var(--bg-color-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+}
+
+.wrapper1,
+.wrapper2 {
+    width: 40vw;
+    word-wrap: wrap;
+}
+
+.wrapper1 {
+    margin-right: 40px;
+}
+
+
+.page3-photo {
+    height: 200px;
+    width: 300px;
+}
+
+.article-heading {
+    font-weight: 400;
+
+}
+
+.page3-description {
+    font-family: sans-serif;
+    margin: 30px 0;
+}
+
+.page3-btn {
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    background: var(--bg-color-grey);
+    padding: 20px 50px;
+    border-radius: 0;
+    color: black;
+}
+
+.page4 {
+    height: 50vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page4-heading,
+.page4-paragraph {
+    margin-bottom: 40px;
+}
+
+.text-wrapper {
+    width: 30vw;
+    word-wrap: break-word;
+}
+
+.volunteer-btn {
+    border: 1px solid black;
+    padding: 20px; 
+    color: var(--font-color-heading);
+}
+
+footer {
+    background: var(--font-color-heading);
+    color: white;
+    height: 40vh;
+}
+
+.footer-wrapper {
+    display: flex;
+    height: 80%;
+    border-bottom: 1px solid white;
+}
+
+.footer-left {
+    width: 80vw;
+    margin: 38px 0 0 100px;
+    text-align: left;
+
+}
+
+.icon {
+    padding-right: 20px;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mail {
+    margin-top: 4px;
+}
+
+.list-container > .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list2-container {
+    margin-bottom: 15px;
+}
+
+.list2-container a,
+.list3-container a {
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+.list2-container > h5,
+.list3-container > h5 {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.568);
+}
+
+.footer-right {
+    width: 20vw;
+    text-align: start;
+    margin: 40px 80px 0 0;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+
+.footer-bottom {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    position: absolute;
+    right: 10px;
 }
